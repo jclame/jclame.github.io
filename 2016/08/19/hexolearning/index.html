@@ -1,0 +1,384 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Hexo + Github, 博客搭建记录 | jclame&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="jclame">
+    
+
+    
+    <meta name="description" content="Hexo + Github, 博客搭建记录
+其实本人并没有在其他什么博客那里写过博客，一般都是在看别人的博客学东西。不知为何心血来潮想搭建个博客来玩玩，通过各种找资料，在简书找到了这篇HEXO+Github,搭建属于自己的博客，按着步骤去搭建了，然而还是各种坑，下面我的搭建过程
+各种问题
+首先是遇到了无法提交的问题，解决方法就是生成一个public sshkey
+第二个就是什么找不到.git, 对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo + Github, 博客搭建记录">
+<meta property="og:url" content="http://yoursite.com/2016/08/19/hexolearning/index.html">
+<meta property="og:site_name" content="jclame's blog">
+<meta property="og:description" content="Hexo + Github, 博客搭建记录
+其实本人并没有在其他什么博客那里写过博客，一般都是在看别人的博客学东西。不知为何心血来潮想搭建个博客来玩玩，通过各种找资料，在简书找到了这篇HEXO+Github,搭建属于自己的博客，按着步骤去搭建了，然而还是各种坑，下面我的搭建过程
+各种问题
+首先是遇到了无法提交的问题，解决方法就是生成一个public sshkey
+第二个就是什么找不到.git, 对">
+<meta property="og:updated_time" content="2016-08-19T16:42:14.459Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo + Github, 博客搭建记录">
+<meta name="twitter:description" content="Hexo + Github, 博客搭建记录
+其实本人并没有在其他什么博客那里写过博客，一般都是在看别人的博客学东西。不知为何心血来潮想搭建个博客来玩玩，通过各种找资料，在简书找到了这篇HEXO+Github,搭建属于自己的博客，按着步骤去搭建了，然而还是各种坑，下面我的搭建过程
+各种问题
+首先是遇到了无法提交的问题，解决方法就是生成一个public sshkey
+第二个就是什么找不到.git, 对">
+
+    
+    <link rel="alternative" href="/atom.xml" title="jclame&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="jclame&#39;s blog" title="jclame&#39;s blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="jclame&#39;s blog">jclame&#39;s blog</a></h1>
+				<h2 class="blog-motto">Once you stop learning, you start dying.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="md" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/08/19/hexolearning/" title="Hexo + Github, 博客搭建记录" itemprop="url">Hexo + Github, 博客搭建记录</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="jclame" target="_blank" itemprop="author">jclame</a>
+		
+  <p class="article-time">
+    <time datetime="2016-08-19T15:11:41.000Z" itemprop="datePublished"> 发表于 08-19-2016</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo_+_Github,_博客搭建记录"><span class="toc-number">1.</span> <span class="toc-text">Hexo + Github, 博客搭建记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#各种问题"><span class="toc-number">1.0.1.</span> <span class="toc-text">各种问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#站点的配置"><span class="toc-number">1.0.2.</span> <span class="toc-text">站点的配置</span></a></li></ol></li></ol></li></ol>
+		
+		</div>
+		
+		<h1 id="Hexo_+_Github,_博客搭建记录">Hexo + Github, 博客搭建记录</h1><hr>
+<p>其实本人并没有在其他什么博客那里写过博客，一般都是在看别人的博客学东西。不知为何心血来潮想搭建个博客来玩玩，通过各种找资料，在简书找到了这篇<a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">HEXO+Github,搭建属于自己的博客</a>，按着步骤去搭建了，然而还是各种坑，下面我的搭建过程</p>
+<h3 id="各种问题">各种问题</h3><ol>
+<li>首先是遇到了无法提交的问题，解决方法就是生成一个public sshkey</li>
+<li><p>第二个就是什么找不到.git, 对于这个问题，敲入以下就解决了</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git init</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>最后一个忘了，就是要用ssh方法就是，HTTPS老是出错</p>
+</li>
+</ol>
+<h3 id="站点的配置">站点的配置</h3><p>参考了这篇<a href="http://www.zipperary.com/2013/05/29/hexo-guide-3/" target="_blank" rel="external">hexo系列教程：（三）hexo博客的配置、使用</a></p>
+<p>由于我选的主题是jacman，所以在_config.yml文件中<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">theme:</span>jacman</span><br></pre></td></tr></table></figure></p>
+<p>所以就去跑去<a href="http://jacman.wuchong.me/2014/11/20/how-to-use-jacman/" target="_blank" rel="external">jacman主题的使用方法</a>看看了。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/08/19/hexolearning/" data-title="Hexo + Github, 博客搭建记录 | jclame&#39;s blog" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/08/20/PX4使用说明/" title="PX4使用说明">
+  <strong>上一篇：</strong><br/>
+  <span>
+  PX4使用说明</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/08/18/hello-world/"  title="Hello World">
+ <strong>下一篇：</strong><br/> 
+ <span>Hello World
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://pixhawk.org/" target="_blank" title=" Pixhawk官方网站">Pixhawk</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://qgroundcontrol.com/， 地面站" target="_blank" title="QGroundControl">QGroundControl</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	
+	<section class="info">
+		<p> This jclame&#39;s blog. <br/>
+			I&#39;m learing Pixhawk and so on.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 
+		
+		<a href="/about" target="_blank" title="jclame">jclame</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+ </html>

@@ -4,22 +4,29 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>jclame&#39;s blog</title>
+    <title>基本力学知识 | jclame&#39;s blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="jclame">
     
 
     
-    <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="jclame's blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+    <meta name="description" content="基本力学知识
+首先需要知道的是电机转速与其产生的力和力矩的关系： $$ F_i = K_f\omega_i^2 $$ $$ \tau_i = K_M\omega_i^2 $$
+合力和合力距： $$ F = F_1 + F_2 + F_3 + F_4 - ma_3$$ $$ M = r_1 \times F_1 + r_2 \times F_2 + r_3 \times F_3+ r_4 \time">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基本力学知识">
+<meta property="og:url" content="http://yoursite.com/2016/08/20/基本力学知识/index.html">
 <meta property="og:site_name" content="jclame's blog">
-<meta property="og:description">
+<meta property="og:description" content="基本力学知识
+首先需要知道的是电机转速与其产生的力和力矩的关系： $$ F_i = K_f\omega_i^2 $$ $$ \tau_i = K_M\omega_i^2 $$
+合力和合力距： $$ F = F_1 + F_2 + F_3 + F_4 - ma_3$$ $$ M = r_1 \times F_1 + r_2 \times F_2 + r_3 \times F_3+ r_4 \time">
+<meta property="og:updated_time" content="2016-08-19T16:37:30.562Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jclame's blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="基本力学知识">
+<meta name="twitter:description" content="基本力学知识
+首先需要知道的是电机转速与其产生的力和力矩的关系： $$ F_i = K_f\omega_i^2 $$ $$ \tau_i = K_M\omega_i^2 $$
+合力和合力距： $$ F = F_1 + F_2 + F_3 + F_4 - ma_3$$ $$ M = r_1 \times F_1 + r_2 \times F_2 + r_3 \times F_3+ r_4 \time">
 
     
     <link rel="alternative" href="/atom.xml" title="jclame&#39;s blog" type="application/atom+xml">
@@ -73,123 +80,86 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
+      <div id="main" class="md" itemscope itemprop="blogPost">
   
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2016/08/20/Hello!/" title="在stackedit那里copy下来的md说明文档" itemprop="url">
-  
-    <h1 itemprop="name">在stackedit那里copy下来的md说明文档</h1>
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
     
-     
-           <p itemprop="description" >Welcome to StackEdit!Hey! I’m your first Markdown document in StackEdit[^stackedit]. Don’t delete me, I’m very helpful! I can be recovered a</p>
-        
+      <a href="/2016/08/20/基本力学知识/" title="基本力学知识" itemprop="url">基本力学知识</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="jclame" target="_blank" itemprop="author">jclame</a>
+		
+  <p class="article-time">
+    <time datetime="2016-08-19T16:37:30.562Z" itemprop="datePublished"> 发表于 08-20-2016</time>
     
-    <time datetime="2016-08-19T16:41:51.697Z" itemprop="datePublished">08-20-2016</time>
-  </a>
-</section>
-
-
-
-
-
-
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#基本力学知识"><span class="toc-number">1.</span> <span class="toc-text">基本力学知识</span></a></li></ol>
+		
+		</div>
+		
+		<h1 id="基本力学知识">基本力学知识</h1><hr>
+<p>首先需要知道的是电机转速与其产生的力和力矩的关系：<br> $$ F_i = K_f\omega_i^2 $$<br> $$ \tau_i = K_M\omega_i^2 $$</p>
+<p>合力和合力距：<br> $$ F = F_1 + F_2 + F_3 + F_4 - ma_3$$<br> $$ M = r_1 \times F_1 + r_2 \times F_2 + r_3 \times F_3+ r_4 \times F_4 + M_1 + M_2 + M_3 + M_4 $$</p>
+<p>有了以上的基础就可以对飞行器进行力学分析，对于z轴方向，有：<br> $$ \sum_{i=1}^4K_f\omega_i^2 + mg = ma $$<br>其中<br> $$ a = \frac{d^2x}{dt^2} = \ddot x $$</p>
+<p>则输入为：   $$ u=\frac{1}{m}[\sum_{i=1}^4K_f\omega_i^2 + mg] $$</p>
+<p>那么可以知道状态量和输入量为  $$ x, u \in \mathbb{R} $$<br>机构的模型是： $$ \ddot x = u $$</p>
+<p>那么最终的问题就是找出一个\(u(t)\), 以让\(x(t)\)跟随\(x^{des}(t)\).</p>
   
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2016/08/20/基本力学知识/" title="基本力学知识" itemprop="url">
-  
-    <h1 itemprop="name">基本力学知识</h1>
-    
-     
-           <p itemprop="description" >基本力学知识
-首先需要知道的是电机转速与其产生的力和力矩的关系： $$ F_i = K_f\omega_i^2 $$ $$ \tau_i = K_M\omega_i^2 $$
-合力和合力距： $$ F = F_1 + F_2 + F_3 + F_4 - ma_3$$ $$ M =</p>
-        
-    
-    <time datetime="2016-08-19T16:37:30.562Z" itemprop="datePublished">08-20-2016</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2016/08/20/PX4使用说明/" title="PX4使用说明" itemprop="url">
-  
-    <h1 itemprop="name">PX4使用说明</h1>
-    
-     
-           <p itemprop="description" >PX4使用说明
-要解锁需要在Manual模式下解锁
-
-PID调节参数介绍PX4 multirotor_att_control应用程序执行一个外循环的方向控制器，相关参数为：
-
-翻滚角(MC_ROLL_P)
-俯仰角(MC_PITCH_P)
-航向角(MC_YAW_P)
-
-和一个内部循</p>
-        
-    
-    <time datetime="2016-08-19T16:36:53.000Z" itemprop="datePublished">08-20-2016</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2016/08/19/hexolearning/" title="Hexo + Github, 博客搭建记录" itemprop="url">
-  
-    <h1 itemprop="name">Hexo + Github, 博客搭建记录</h1>
-    
-     
-           <p itemprop="description" >Hexo + Github, 博客搭建记录
-其实本人并没有在其他什么博客那里写过博客，一般都是在看别人的博客学东西。不知为何心血来潮想搭建个博客来玩玩，通过各种找资料，在简书找到了这篇HEXO+Github,搭建属于自己的博客，按着步骤去搭建了，然而还是各种坑，下面我的搭建过程
-</p>
-        
-    
-    <time datetime="2016-08-19T15:11:41.000Z" itemprop="datePublished">08-19-2016</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2016/08/18/hello-world/" title="Hello World" itemprop="url">
-  
-    <h1 itemprop="name">Hello World</h1>
-    
-     
-           <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the </p>
-        
-    
-    <time datetime="2016-08-18T13:16:34.408Z" itemprop="datePublished">08-18-2016</time>
-  </a>
-</section>
-
-
-
-
-
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
 
 
 </div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/08/20/基本力学知识/" data-title="基本力学知识 | jclame&#39;s blog" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/08/20/Hello!/" title="在stackedit那里copy下来的md说明文档">
+  <strong>上一篇：</strong><br/>
+  <span>
+  在stackedit那里copy下来的md说明文档</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/08/20/PX4使用说明/"  title="PX4使用说明">
+ <strong>下一篇：</strong><br/> 
+ <span>PX4使用说明
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
 <div id="asidepart">
@@ -305,8 +275,36 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
   });
 });
 </script>
@@ -362,6 +360,35 @@ $(document).ready(function(){
 
 <!-- MathJax Begin -->
 <!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <!-- MathJax End -->
