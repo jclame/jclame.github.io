@@ -39,7 +39,7 @@ PID调节参数介绍PX4 multirotor_att_control应用程序执行一个外循环
 和一个内部循环，有三个独立的控制角度变化率PID控制器：
 
 翻滚角率(MC_ROLLRATE_P, MC_ROLLRATE_I, M">
-<meta property="og:updated_time" content="2016-08-19T16:37:24.465Z">
+<meta property="og:updated_time" content="2016-08-20T16:38:01.292Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PX4使用说明">
 <meta name="twitter:description" content="PX4使用说明
@@ -151,7 +151,7 @@ PID调节参数介绍PX4 multirotor_att_control应用程序执行一个外循环
 <p>外部循环的输出是机体的目标速率（eg. 如果四轴目标角度为0，而目前左右倾斜30度，那么控制输出将可以是这样的：翻滚速率为60度每秒）。内部速率控制回路改变电机输出，这样四轴能按所需的角速度旋转。<br>这些参数的大小实际上有一个直观的意义，eg. 如果<code>MC_ROLL_P</code>的值为6.0，四轴将补偿的角度偏差值为0.5弧度(30度)，那么目标角速率将为3 弧度/秒。然后如果内环<code>MC_ROLLRATE_P</code>的值为0.1，最后输出给翻滚角的油门控制量将为3*0.1 =0.3。这意味着它将降低电机一边30%的速度，增加另一边30%速度来诱导角动量回到水平。<br>这里还有一个<code>MC_YAW_FF</code>参数，它控制用户输入反馈给航向速率控制器的灵敏度。0代表非常慢的控制，只有航向位置错误的时候控制器才会响应，1代表灵敏的控制，但是可能有些过调，由于控制器移动航向迅速，导致很难保持航向为0。</p>
 <h3 id="第一步：准备">第一步：准备</h3><p>首先，把所有的参数设为初始值：</p>
 <ol>
-<li>设置<code>MC_XXX_P</code>为<code>0(ROLL, PITCH, YAW)</code></li>
+<li>设置<code>MC_XXX_P</code>为0<code>(ROLL, PITCH, YAW)</code></li>
 <li>设置所有的<code>MC_XXXRATE_P</code>, <code>MC_XXXRATE_I</code>, <code>MC_XXXRATE_D</code>为0，除了<code>MC_ROLLRATE_P</code> 和 <code>MC_PITCHRATE_P</code>。</li>
 <li>设置<code>MC_ROLLRATE_P</code> 和 <code>MC_PITCHRATE_P</code>为一个比较小的值，比如. 0.02</li>
 <li>设置<code>MC_YAW_FF</code>为0.5</li>
